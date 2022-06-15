@@ -1,25 +1,32 @@
-// Defining text characters for the empty and full hearts for you to use later.
-const EMPTY_HEART = '♡'
-const FULL_HEART = '♥'
+// // Defining text characters for the empty and full hearts for you to use later.
+// const EMPTY_HEART = '♡'
+// const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+// // Your JavaScript code goes here!
+// .then(function (object) {
+//   console.log(object);
+// });
 
 
 
+// //------------------------------------------------------------------------------
+// // Don't change the code below: this function mocks the server response
+// //------------------------------------------------------------------------------
 
-//------------------------------------------------------------------------------
-// Don't change the code below: this function mocks the server response
-//------------------------------------------------------------------------------
+// function mimicServerCall(url="http://mimicServer.example.com", config={}) {
+//   return new Promise(function(resolve, reject) {
+//     setTimeout(function() {
+//       let isRandomFailure = Math.random() < .2
+//       if (isRandomFailure) {
+//         reject("Random server error. Try again.");
+//       } else {
+//         resolve("Pretend remote server notified of action!");
+//       }
+//     }, 300);
+//   });
+// }
+setTimeout(() => {console.log("this is the first message")}, 5000);
+  setTimeout(() => {console.log("this is the second message")}, 3000);
+  setTimeout(() => {console.log("this is the third message")}, 1000);
 
-function mimicServerCall(url="http://mimicServer.example.com", config={}) {
-  return new Promise(function(resolve, reject) {
-    setTimeout(function() {
-      let isRandomFailure = Math.random() < .2
-      if (isRandomFailure) {
-        reject("Random server error. Try again.");
-      } else {
-        resolve("Pretend remote server notified of action!");
-      }
-    }, 300);
-  });
-}
+  // Output:
